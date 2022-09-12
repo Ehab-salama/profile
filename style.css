@@ -1,0 +1,168 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+
+}
+
+body{
+background: rgb(184, 208, 222);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    min-width: 700px;
+    min-height:1000px ;
+    background: hwb(0 36% 62%);
+    display :grid ;
+    grid-template-columns: 1fr 3fr;
+    margin: 30px;
+}
+.container .left-side{
+    position: relative;
+    background: #45699f;
+    padding: 5px;
+    
+    
+}
+.container .right-side{
+    position: relative;
+    background: #ebe6e6;
+    padding:10px ;
+
+    
+
+}
+img{
+    position: relative;
+    width: 200px;
+    height: 230px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(91, 99, 76);
+}
+.contact-info{
+    padding: 10px 10px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 10px;
+    
+}
+
+.contact-info .mail {
+display: inline;
+    font-size: 13px}
+
+
+.education{   
+    padding: 10px;
+     line-height: 20px;
+     padding-bottom: 10px;
+     font-weight: 600;
+     margin: 20px;
+}
+
+.area{margin: 20px;
+font-weight: 900;
+color:rgb(59, 69, 43);
+font-size: 20px;}
+
+.language{
+    padding: 10px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 20px;
+
+}
+.summary{
+    
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 10px;
+    
+}
+
+h3{
+color: rgb(222, 228, 228);
+
+}
+
+h6{color:rgb(106, 122, 78);
+
+font-size: 1.3rem;
+text-align: center;}
+h5{color: #385a8c;
+font-size: 22px;
+font-weight:600 px;
+}
+span{font-weight: 900;}
+
+.pro{color: #456fae;
+text-align: center;
+font-size: 30px;
+ border-radius:50px;
+text-decoration: underline;
+}
+
+ .logo{height: 70px;
+width: 100px;
+border-radius: 5px;
+margin: 5px;
+
+}
+.summer{
+    margin: 10px;
+    font-size: 20px;
+    letter-spacing: 2;
+    line-height: 30px;
+}
+@media(max-width:1000px)
+{
+    .container
+    {margin: 10px;
+
+grid-template-columns:reapeat(1,1fr) ;
+}
+}
+@media(max-width:600px)
+{
+.about 
+{
+    flex-direction: column;
+}
+.left-side{
+    min-width: 200px;
+    max-width: 300px;
+    margin-bottom: 5px;
+}
+.right-side{
+min-width: 300px;
+max-width: 600px;
+}
+}
+.intrest{
+    margin:20px;
+    font-size:20px;
+}
+
